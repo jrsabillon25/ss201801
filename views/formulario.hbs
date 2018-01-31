@@ -1,0 +1,20 @@
+<form action="aerolinea" method="post">
+<div>
+  <h1>Aerolinea S.A.</h1>
+  <br>
+  <label>Nombre Completo</label> <input type="text" name="txtNombre" value="{{txtNombre}}" placeholder="Nombre Completo"><br>
+  <label>Identidad</label> <input type="text" name="txtId" value="{{txtId}}" placeholder="0000-0000-00000"><br>
+  <label>Edad</label> <input type="text" name="txtEdad" value="{{txtEdad}}" placeholder="18-99"><br>
+  <label>Tipos de Vuelo</label><br>
+  <input type="radio" value="1500" id="1" name="tegsps"{{1checked}}/> Tegucigalpa-SPS <br>
+  <input type="radio" value="1500" id="2" name="spsteg"{{2checked}}/> SPS-Tegucigalpa <br>
+  <input type="radio" value="2000" id="3" name="tegcei"{{3checked}}/> Tegucigalpa-Ceiba <br>
+  <input type="radio" value="2000" id="4" name="ceiteg"{{4checked}}/> Ceiba-Tegucigalpa
+  <br>
+  <br> <label>Dias de viaje</label><input type="text" name="txtDias" value="{{txtDias}}" placeholder="0-20"><br>
+  <br> <input type="submit" value="Enviar">
+</form>
+</div><br>
+<div>
+  {{resultado}}
+</div>
