@@ -27,6 +27,7 @@ router.get('/aerolinea', function(req,res,next){
 router.post('/aerolinea', function(req,res,next){
   console.log(req.body);
 
+  var id = document.getElementById('1');
   var datos = {
       "txtNombre": req.body.txtNombre,
       "txtId": req.body.txtId,
@@ -35,8 +36,8 @@ router.post('/aerolinea', function(req,res,next){
       "2checked": (req.body.spsteg && true)?"checked=checked":"",
       "3checked": (req.body.tegcei && true)?"checked=checked":"",
       "4checked": (req.body.ceiteg && true)?"checked=checked":"",
-      "txtDias": req.body.txtDias,
-      if(document.getElementById('1').checked){
+      "txtDias": req.body.txtDias
+      if(id.checked){
         var result = 1500 * parseInt(req.body.txtDias);
       "resultado": req.body.txtNombre + " " + result
     };
